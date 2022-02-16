@@ -1,0 +1,31 @@
+{
+  "name": "fun-token",
+  "version": "1.0.0",
+  "description": "An example ERC20 token for Fun Token technical screen",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "npx truffle compile",
+    "console:dev": "npx truffle console --network cldev",
+    "console:live": "npx truffle console --network live",
+    "solhint": "solhint ./contracts/**/*.sol",
+    "lint": "yarn solhint",
+    "migrate:dev": "npx truffle migrate --reset --network cldev",
+    "migrate:live": "npx truffle migrate --network kovan",
+    "test": "NODE_ENV=test npx truffle test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^1.4.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "truffle": "^5.1.5",
+    "truffle-plugin-verify": "^0.5.21"
+  }
+}
